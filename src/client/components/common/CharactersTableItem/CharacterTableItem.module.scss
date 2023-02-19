@@ -1,0 +1,95 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: 100%;
+    height: vw_d(92);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    .character{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+            input {
+                width: vw_d(24);
+                height: vw_d(24);
+                margin: 0 vw_d(29) 0 vw_d(22);
+            }
+
+        img{
+            width: vw_d(40);
+            height: vw_d(40);
+            border: vw_d(1) solid #217AFF;
+            border-radius: vw_d(25);
+            margin-right: vw_d(26);
+        }
+
+        &Name{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: vw_d(20);
+            line-height: vw_d(23);
+        }
+    }
+
+    .tags{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: vw_d(25);
+        left: vw_d(303);
+        &Item{
+            min-width: vw_d(50);
+            max-width: 100%;
+            height: vw_d(40);
+            border: vw_d(1.2) solid #217AFF;
+            border-radius: vw_d(30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            margin-right: vw_d(15);
+
+            &Name{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: vw_d(18);
+                line-height: vw_d(21);
+                color: #217AFF; 
+                margin: vw_d(9) vw_d(10) vw_d(10) vw_d(10);    
+            }
+        }
+    }
+
+    .abilities{
+        width: vw_d(472);
+        position: absolute;
+        top: vw_d(31);
+        right: vw_d(18);
+        display: grid;
+        grid-template-columns: vw_d(83) vw_d(92) vw_d(110) vw_d(125) vw_d(62);
+
+        &Value{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: vw_d(24);
+            line-height: vw_d(28);
+        }
+
+        .red{
+            color: red;
+        }
+    }
+}
+
+.wrapperActive{
+    background-color: #EDF5FF;
+}

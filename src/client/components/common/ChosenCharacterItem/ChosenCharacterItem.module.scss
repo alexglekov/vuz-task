@@ -1,0 +1,33 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    .characterItem{
+        position: relative;
+        width: vw_d(80);
+        height: vw_d(80);
+
+        img {
+            width: vw_d(79);
+            height: vw_d(79);
+            border: vw_d(1) solid #217AFF;
+            border-radius: vw_d(40);
+        }
+
+        button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: vw_d(80);
+            height: vw_d(80);
+            border: vw_d(1) solid #217AFF;
+            border-radius: vw_d(40);
+            background-color: rgba(33, 122, 255, 0.5);
+            
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: vw_d(14);
+            line-height: vw_d(16);
+            color: #F5FDFF;
+        }
+    }
+}

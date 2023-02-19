@@ -1,0 +1,50 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: vw_d(1080);
+    min-height: vw_d(272);
+    margin-top: vw_d(57);
+    display: flex;
+    flex-direction: column;
+
+    .tableHeader{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        &Character{
+            margin-right: vw_d(214);
+        }
+
+        &Tags{
+            margin-right: vw_d(253);
+        }
+
+        &Abilities{
+            width: vw_d(472);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .headerText{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: vw_d(20);
+        line-height: vw_d(23);
+    }
+
+    .table{
+        width: 100%;
+        min-height: vw_d(272);
+        height: 100%;
+        margin-top: vw_d(10);
+        background-color: white;
+        box-shadow: 0 vw_d(2) vw_d(4) rgba(0, 0, 0, 0.25);
+        border-radius: vw_d(10);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+}

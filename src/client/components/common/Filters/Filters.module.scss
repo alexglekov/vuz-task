@@ -1,0 +1,21 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: vw_d(1293);
+    height: vw_d(90);
+    margin-top: vw_d(41);
+    display: flex;
+    flex-direction: row;
+    gap: vw_d(10);
+    flex-wrap: wrap;
+
+    .clearBtn{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: vw_d(20);
+        line-height: vw_d(23);
+        text-decoration-line: underline;
+        color: #999999;
+        margin-left: vw_d(11);
+    }
+}

@@ -1,0 +1,73 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    min-width: vw_d(57);
+    max-width: 100%;
+    height: vw_d(40);
+    border: vw_d(1.2) solid #217AFF;
+    border-radius: vw_d(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+
+    .name{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: vw_d(18);
+        line-height: vw_d(21);
+        color: #217AFF; 
+        margin: vw_d(9) vw_d(10) vw_d(10) vw_d(10);    
+    }
+}
+
+.wrapperActive{
+    min-width: vw_d(50);
+    max-width: 100%;
+    height: vw_d(40);
+    border: vw_d(1.2) solid #217AFF;
+    border-radius: vw_d(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #217AFF;
+    cursor: pointer;
+
+    .name{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: vw_d(18);
+        line-height: vw_d(21);
+        color: white; 
+        margin: vw_d(9) vw_d(10) vw_d(10) vw_d(10);    
+    }
+
+    .tick{
+        margin-top: vw_d(17);
+        margin-right: vw_d(5);
+        width: vw_d(20);
+        height: vw_d(20);
+        position: relative;
+
+        .leftArrow{
+            position: absolute;
+            width: vw_d(7.07);
+            height: 0px;
+            top: vw_d(3);
+            
+            border: vw_d(1.5) solid #FFFFFF;
+            transform: rotate(45deg);
+        }
+
+        .rightArrow{
+            position: absolute;
+            width: vw_d(16.97);
+            height: 0;
+            left: vw_d(14);
+            
+            border: vw_d(1.5) solid #FFFFFF;
+            transform: rotate(-45deg);
+        }
+    }
+}

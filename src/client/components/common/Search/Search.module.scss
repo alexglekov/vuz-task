@@ -1,0 +1,46 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    height: vw_d(40);
+    margin-top: vw_d(37);
+    display: flex;
+    align-items: center;
+    position: relative; 
+
+    .line{
+        width: vw_d(920);
+        height: vw_d(1);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 51.04%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .search{
+        width: vw_d(500);
+        height: vw_d(40);
+        z-index: 1;
+        position: absolute;
+        left: vw_d(210);
+        background-color: white;
+        border: vw_d(1) solid rgba(0, 0, 0, 51.04);
+        border-radius: vw_d(4);
+        display: flex;
+        align-items: center;
+
+        svg{
+            width: vw_d(19);
+            height: vw_d(19);
+            margin-left: vw_d(10);
+            margin-right: vw_d(8);
+        }
+
+        input{
+            width: vw_d(450);
+            height: vw_d(20);
+            outline: none;
+            border: none;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: vw_d(16);
+            line-height: vw_d(19);
+        }
+    }
+}

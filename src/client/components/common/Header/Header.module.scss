@@ -1,0 +1,19 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: 100%;
+    height: vw_d(76);
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: vw_d(160);
+        height: vw_d(90);
+        position: absolute;
+        top: vw_d(32);
+    }
+}

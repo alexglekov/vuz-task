@@ -1,0 +1,27 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: vw_d(1376);
+    min-height: vw_d(1004);
+    height: 100%;
+    background-color: #F5FDFF;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: vw_d(24);
+        line-height: vw_d(28);
+        margin-top: vw_d(71);
+    }
+
+    .champions{
+        display: flex;
+        flex-direction: row;
+        gap: vw_d(12);
+        margin-top: vw_d(16);
+    }
+}

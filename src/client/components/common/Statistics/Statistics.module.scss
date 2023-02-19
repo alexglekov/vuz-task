@@ -1,0 +1,59 @@
+@import 'src/client/styles/index.scss';
+
+.wrapper{
+    width: vw_d(448);
+    .stats{
+        display: flex;
+        flex-direction: row;
+        width: vw_d(448);
+        margin-top: vw_d(40);
+        justify-content: space-between;
+        position: relative;
+
+        &DeviderLeft{
+            position: absolute;
+            width: vw_d(1);
+            height: vw_d(100);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 51.04%, rgba(0, 0, 0, 0) 100%);
+            top: vw_d(-15);
+            left: vw_d(153);
+        }
+
+        &DeviderRight{
+            position: absolute;
+            width: vw_d(1);
+            height: vw_d(100);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 51.04%, rgba(0, 0, 0, 0) 100%);
+            top: vw_d(-15);
+            left: vw_d(261.5);
+        }
+
+        &Item{
+            text-align: center;
+
+            &Name{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: vw_d(16);
+                line-height: vw_d(19);
+            }
+
+            &Value{
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: vw_d(24);
+                line-height: vw_d(28);
+                margin-top: vw_d(21);
+            }
+        }
+    }
+
+    .remark{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: vw_d(12);
+        line-height: vw_d(14);
+        color: #666666;
+        margin-top: vw_d(27);
+    }
+}
